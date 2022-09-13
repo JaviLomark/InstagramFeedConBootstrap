@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	  <script src="https://kit.fontawesome.com/30a8366a77.js" crossorigin="anonymous"></script>
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	  <title>Instagram Feed con Bootstrap</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-5" href="#"><i class="fa-brands fa-instagram fa-xl"></i><span class="fw-semibold fs-5"> Instagram</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+
+        <ul class="navbar-nav pe-5 me-5">
+
+        <li class="nav-item p-2">
+          <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="fw-semibold">Caption:</p>
+                          <textarea class="form-control" rows="3" placeholder="Add the caption of your post"></textarea>
+                          <button type="button" class="btn btn-light border-opacity-50 border-secondary rounded mt-2"><i class="fa-solid fa-camera"></i></button>
+                          <button type="button" class="btn btn-light border-opacity-50 border-secondary rounded mt-2"><i class="fa-solid fa-location-dot"></i></button>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown p-2">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item link-danger" href="#">Log out</a></li>
+                  </ul>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      <div class="container-fluid pt-3">
+        <ul class="nav nav-tabs justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fa-solid fa-square"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-square"></i></a>
+        </ul>
+      </div>
+
+        <div class="container-fluid">
+          <div class="row justify-content-center p-3">
+            <div class="card w-auto m-0 p-0">
+                <p class="card-text fs-3 mb-0 ps-2">Los Alpes<small class="text-muted fs-6 p-2 position-absolute top-0 end-0">15/09/22</small></p>
+                <img src="https://picsum.photos/id/235/800/600">
+                <div class="card-body">
+                <p><i class="fa-solid fa-thumbs-up"></i> 139 Likes</p>
+                <p class="card-text">Las montañas de los Alpes son increíbles! Toda una semana disfrutando de estos paisajes.</p>
+                </div>
+            </div>
+          </div>
+          <div class="row justify-content-center p-3">
+            <div class="card w-auto m-0 p-0">
+                <p class="card-text fs-3 mb-0 ps-2">Mi perro Boby<small class="text-muted fs-6 p-2 position-absolute top-0 end-0">15/09/22</small></p>
+                <img src="https://picsum.photos/id/237/800/600">
+                <div class="card-body">
+                <p><i class="fa-solid fa-thumbs-up"></i> 186 Likes</p>
+                <p class="card-text">Boby es un precioso cachorro. Es muy bueno y le encanta salir a pasear conmigo todas las tardes.</p>
+                </div>
+            </div>
+          </div>
+          <div class="row justify-content-center p-3">
+            <div class="card w-auto m-0 p-0">
+                <p class="card-text fs-3 mb-0 ps-2">Me encanta mi trabajo<small class="text-muted fs-6 p-2 position-absolute top-0 end-0">15/09/22</small></p>
+                <img src="https://picsum.photos/id/2/800/600">
+                <div class="card-body">
+                <p><i class="fa-solid fa-thumbs-up"></i> 145 Likes</p>
+                <p class="card-text">Café, cuaderno de notas, ordenador y listo para empezar un nuevo proyecto web.</p>
+                </div>
+            </div>
+          </div>
+          <div class="row justify-content-center p-3">
+            <div class="card w-auto m-0 p-0">
+                <p class="card-text fs-3 mb-0 ps-2">Día de campo<small class="text-muted fs-6 p-2 position-absolute top-0 end-0">15/09/22</small></p>
+                <img src="https://picsum.photos/id/18/800/600">
+                <div class="card-body">
+                <p><i class="fa-solid fa-thumbs-up"></i> 186 Likes</p>
+                <p class="card-text">Este sábado hemos salido toda la familia a disfrutar de un día soleado en el campo... Me encanta!</p>
+                </div>
+            </div>
+          </div>
+          <div class="row justify-content-center p-3">
+            <div class="card w-auto m-0 p-0">
+                <p class="card-text fs-3 mb-0 ps-2">Me encanta la playa<small class="text-muted fs-6 p-2 position-absolute top-0 end-0">15/09/22</small></p>
+                <img src="https://picsum.photos/id/37/800/600">
+                <div class="card-body">
+                <p><i class="fa-solid fa-thumbs-up"></i> 24 Likes</p>
+                <p class="card-text">Precioso paisaje desde la playa de La Coruña.</p>
+                </div>
+            </div>
+          </div>
+          <div class="row justify-content-center p-3">
+            <div class="card w-auto m-0 p-0">
+                <p class="card-text fs-3 mb-0 ps-2">Mi padre<small class="text-muted fs-6 p-2 position-absolute top-0 end-0">15/09/22</small></p>
+                <img src="https://picsum.photos/id/27/800/600">
+                <div class="card-body">
+                <p><i class="fa-solid fa-thumbs-up"></i> 286 Likes</p>
+                <p class="card-text">Un día más compartiendo buenos momentos con mi padre.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	</body>
+</html>
